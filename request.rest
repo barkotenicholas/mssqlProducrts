@@ -1,0 +1,34 @@
+###
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/qwasd
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"Bed",
+    "description":"best Bed in town",
+    "price":10000,
+    "url":"Url for Bed",
+    "discount":5
+}
+
+###
+PATCH  http://localhost:3000/products/qwasd
+Content-Type: application/json
+
+{
+    "name":"tv",
+    "description":"best tv in town",
+    "price":1230,
+    "url":"Url for Betvd",
+    "discount":2
+}
+
+###
+DELETE http://localhost:3000/products/qwasd
+Content-Type: application/json
+
