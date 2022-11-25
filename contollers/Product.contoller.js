@@ -32,7 +32,6 @@ export const create = async (req, res) => {
         const id = v4()
 
         const product = {
-            operation: 'insert',
             id: id,
             names: name,
             description: description,
@@ -55,7 +54,6 @@ export const update = async (req, res) => {
         const id = req.params.id
         const { name, description, price, url, discount } = req.body;
         const product = {
-            operation: 'update',
             id: id,
             names: name,
             description: description,

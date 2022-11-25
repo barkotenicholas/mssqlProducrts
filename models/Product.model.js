@@ -21,7 +21,6 @@ export const createOrUpdate = async(product)=>{
 
     const pool = await poolPromise
     const rs = await pool.request()
-                .input('operationp',mssql.VarChar,product.operation)
                 .input('id',mssql.VarChar,product.id)
                 .input('name',mssql.VarChar,product.names)
                 .input('description',mssql.VarChar,product.description)

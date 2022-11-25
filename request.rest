@@ -9,11 +9,11 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name":"Bed",
-    "description":"best Bed in town",
-    "price":10000,
-    "url":"Url for Bed",
-    "discount":5
+    "name":"plate",
+    "description":"best plate in town",
+    "price":50,
+    "url":"Url for plate",
+    "discount":2
 }
 
 ###
@@ -21,14 +21,12 @@ PATCH  http://localhost:3000/products/qwasd
 Content-Type: application/json
 
 {
-    "name":"tv",
-    "description":"best tv in town",
-    "price":1230,
-    "url":"Url for Betvd",
-    "discount":2
+    "name":"updated tv",
+    "description":"best updated tv in town",
+    "price":43,
+    "url":"Url for best upated tv",
+    "discount":234
 }
-
 ###
 DELETE http://localhost:3000/products/qwasd
 Content-Type: application/json
-
